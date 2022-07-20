@@ -2,7 +2,7 @@
 function App() {
   return (
     <div>
-      <h1>Suuuup</h1>
+      <h1 className="text-4xl font-bold font-signature">&lt;JackGlazer/&gt;</h1>
     </div>
   );
 }
