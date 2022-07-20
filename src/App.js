@@ -1,8 +1,9 @@
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <h1 className="text-4xl font-bold font-signature">&lt;JackGlazer/&gt;</h1>
+      <Navbar />
     </div>
   );
 }

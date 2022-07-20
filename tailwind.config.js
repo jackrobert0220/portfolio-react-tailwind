@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      signature: ["Special Elite"],
+      signature: ["Metal Mania"],
     },
   },
   plugins: [],
