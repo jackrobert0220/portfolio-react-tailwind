@@ -10,7 +10,9 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center md:h-2/3">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm a Front-End Developer</h2>
+          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+            I'm a Front-End Developer
+          </h2>
           <p className="text-gray-500 py-4 max-w-md">
             Currently, I'm focused on building responsive front-end web
             applications while learning back-end technologies.
@@ -25,8 +27,14 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="rounded-2xl mx-auto w-2/3 md:w-[10] mt-4 sm:mt-0 p-4">
-          <img src={HeroImage} alt="Jack Glazer playing the guitar at a live event"/>
+        <div className="rounded-2xl mx-auto w-2/3 md:w-[10] mt-4 sm:mt-0 bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black">
+          <div className="">
+            <img
+              src={HeroImage}
+              alt="Jack Glazer playing the guitar at a live event"
+              className="rounded-2xl"
+            />
+          </div>
         </div>
       </div>
     </div>
