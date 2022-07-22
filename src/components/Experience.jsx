@@ -9,6 +9,8 @@ import node from "../assets/skills/node.png";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
 import python from "../assets/skills/python.png";
+import bootstrap from "../assets/skills/bootstrap.png";
+import socket from "../assets/skills/socket.png";
 
 const Experience = () => {
   const techs = [
@@ -72,6 +74,18 @@ const Experience = () => {
       title: "Python",
       style: "shadow-blue-500",
     },
+    {
+      id: 11,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-500",
+    },
+    {
+      id: 12,
+      src: socket,
+      title: "Socket.io",
+      style: "shadow-white",
+    },
   ];
 
   return (
@@ -89,7 +103,10 @@ const Experience = () => {
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
-            <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
