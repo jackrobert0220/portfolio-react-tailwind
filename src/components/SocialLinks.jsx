@@ -1,6 +1,7 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaSpotify } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSpotify, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { BsInstagram } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
@@ -8,10 +9,10 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          Instagram <BsInstagram size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/jack-glazer/",
+      href: "https://instagram.com/jackglazzzer/",
       style: "rounded-tr-md",
     },
     {
@@ -27,13 +28,31 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
+          LinkedIn <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/jack-glazer/",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          Twitter <FaTwitter size={30} />
+        </>
+      ),
+      href: "https://www.twitter.com/jackglazzzer/",
+    },
+    {
+      id: 5,
+      child: (
+        <>
           Spotify <FaSpotify size={30} />
         </>
       ),
       href: "https://open.spotify.com/artist/7FXugc5Lme1dHnjxD88do4?si=n9eH1rx9QSaSJsyhacFLmQ",
     },
     {
-      id: 4,
+      id: 6,
       child: (
         <>
           Mail <HiOutlineMail size={30} />
@@ -47,7 +66,7 @@ const SocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({id, child, href, style}) => (
+        {links.map(({ id, child, href, style }) => (
           <li
             key={id}
             className={
