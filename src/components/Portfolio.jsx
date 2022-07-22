@@ -54,7 +54,7 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <a
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-[#47B0AC] border-2 border-white hover:border-[#47B0AC] hover:text-white rounded-lg hover:rounded-none"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-[#47B0AC] border-2 hover:border-white border-[#47B0AC] text-white rounded-lg hover:rounded-none"
                   href={demo}
                   target="_blank"
                   rel="noreferrer"
@@ -63,7 +63,7 @@ const Portfolio = () => {
                 </a>
 
                 <a
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-[#47B0AC] border-2 border-white hover:border-[#47B0AC] hover:text-white rounded-lg hover:rounded-none"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-[#47B0AC] border-2 hover:border-white border-[#47B0AC] text-white rounded-lg hover:rounded-none"
                   href={code}
                   target="_blank"
                   rel="noreferrer"
