@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/guitar.jpg";
 import { ImArrowRight } from "react-icons/im";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -19,12 +20,12 @@ const Home = () => {
           </p>
 
           <div className="flex justify-center sm:justify-start">
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-[#47B0AC] to-black-100 cursor-pointer">
+            <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-[#47B0AC] to-black-100 cursor-pointer">
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <ImArrowRight size={25} className="ml-2" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="rounded-2xl mx-auto w-2/3 md:w-[10] mt-4 sm:mt-0 bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black">
