@@ -74,18 +74,6 @@ const Experience = () => {
       title: "Python",
       style: "shadow-blue-500",
     },
-    {
-      id: 11,
-      src: bootstrap,
-      title: "Bootstrap",
-      style: "shadow-purple-500",
-    },
-    {
-      id: 12,
-      src: socket,
-      title: "Socket.io",
-      style: "shadow-white",
-    },
   ];
 
   return (
@@ -96,7 +84,7 @@ const Experience = () => {
       <div className="max-w-screen-lg mx-auto p-4 flex-col justify-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-[#47B0AC] p-2 inline">
-            Expericne
+            Experience
           </p>
           <p className="py-6">The technologies I have worked with</p>
         </div>
