@@ -1,6 +1,5 @@
 import React from "react";
 import css from "../assets/skills/css.png";
-import django from "../assets/skills/django.png";
 import github from "../assets/skills/github.png";
 import html from "../assets/skills/html.png";
 import javascript from "../assets/skills/javascript.png";
@@ -8,9 +7,8 @@ import mongo from "../assets/skills/mongo.png";
 import node from "../assets/skills/node.png";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
-import python from "../assets/skills/python.png";
 import bootstrap from "../assets/skills/bootstrap.png";
-import socket from "../assets/skills/socket.png";
+import next from "../assets/skills/nextjs.png";
 
 const Experience = () => {
   const techs = [
@@ -64,15 +62,15 @@ const Experience = () => {
     },
     {
       id: 9,
-      src: django,
-      title: "Django",
-      style: "shadow-green-600",
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-500",
     },
     {
       id: 10,
-      src: python,
-      title: "Python",
-      style: "shadow-blue-500",
+      src: next,
+      title: "NextJS",
+      style: "shadow-white",
     },
   ];
 

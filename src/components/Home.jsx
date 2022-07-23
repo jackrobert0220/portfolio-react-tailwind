@@ -12,12 +12,21 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center md:h-2/3">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Front-End Developer
+            Hi, I'm <span className="text-[#47B0AC]">Jack</span>👋
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <h3 className="text-2xl sm:text-4xl font-bold text-white">
+            I'm a Front-End Developer.
+          </h3>
+          <ul className="text-white text-xl py-4">
+            <li>🎸 Rock Musician</li>
+            <li>☀️ based in Los Angeles, CA</li>
+            <li>🔥 former Crematory Operator</li>
+            <li>🐶 Dog Father</li>
+          </ul>
+          {/* <p className="text-gray-500 py-4 max-w-md">
             Currently, I'm focused on building responsive front-end web
             applications while learning back-end technologies.
-          </p>
+          </p> */}
 
           <div className="flex justify-center sm:justify-start">
             <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-[#47B0AC] to-black-100 cursor-pointer">
