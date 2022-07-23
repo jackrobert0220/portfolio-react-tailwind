@@ -7,8 +7,7 @@ import mongo from "../assets/skills/mongo.png";
 import node from "../assets/skills/node.png";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
-import bootstrap from "../assets/skills/bootstrap.png";
-import next from "../assets/skills/nextjs.png";
+
 
 const Experience = () => {
   const techs = [
