@@ -71,7 +71,7 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full pt-1 px-4 md:flex-row">
         <div className="flex flex-col justify-center md:h-2/3">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             Hi, I'm <span className="text-[#47B0AC]">Jack</span>👋
@@ -105,12 +105,15 @@ const Home = () => {
           </div>
 
           <ul className=" flex lg:hidden">
-        {links.map(({ id, child, link }) => (
+        {links.map(({ id, child, href }) => (
           <li
             key={id}
             className="p-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
           >
+          <a href={href} target="_blank"
+              rel="noreferrer">
             {child}
+            </a>
           </li>
         ))}
       </ul>
