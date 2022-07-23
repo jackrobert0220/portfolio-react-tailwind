@@ -2,8 +2,70 @@ import React from "react";
 import HeroImage from "../assets/guitar.jpg";
 import { ImArrowRight } from "react-icons/im";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin, FaSpotify, FaTwitter } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Home = () => {
+
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          <BsInstagram size={30} />
+        </>
+      ),
+      href: "https://instagram.com/jackglazzzer/",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/jackrobert0220/",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/jack-glazer/",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <FaTwitter size={30} />
+        </>
+      ),
+      href: "https://www.twitter.com/jackglazzzer/",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          <FaSpotify size={30} />
+        </>
+      ),
+      href: "https://open.spotify.com/artist/7FXugc5Lme1dHnjxD88do4?si=n9eH1rx9QSaSJsyhacFLmQ",
+    },
+    {
+      id: 6,
+      child: (
+        <>
+          <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:jackrobert0220@gmail.com",
+      style: "rounded-br-md",
+    },
+  ];
+
   return (
     <div
       name="home"
@@ -29,13 +91,31 @@ const Home = () => {
           </p> */}
 
           <div className="flex justify-center sm:justify-start">
-            <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-[#47B0AC] to-black-100 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-l from-[#47B0AC] to-black-100 cursor-pointer"
+            >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <ImArrowRight size={25} className="ml-2" />
               </span>
             </Link>
           </div>
+
+          <ul className=" flex lg:hidden">
+        {links.map(({ id, child, link }) => (
+          <li
+            key={id}
+            className="p-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
+          >
+            {child}
+          </li>
+        ))}
+      </ul>
+
+
         </div>
         <div className="rounded-2xl mx-auto w-2/3 md:w-[10] mt-4 sm:mt-0 bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black">
           <div className="">
