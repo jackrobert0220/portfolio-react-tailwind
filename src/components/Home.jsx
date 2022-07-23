@@ -71,9 +71,9 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full pt-1 px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center md:h-2/3">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-4xl  pt-1 sm:text-7xl font-bold text-white">
             Hi, I'm <span className="text-[#47B0AC]">Jack</span>👋
           </h2>
           <h3 className="text-2xl sm:text-4xl font-bold text-white">
