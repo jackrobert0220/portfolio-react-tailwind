@@ -16,9 +16,9 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: djangoGuitars,
-      demo: "https://djangoguitars.herokuapp.com/",
-      code: "https://github.com/jackrobert0220/Django-Guitars",
+      src: flappybird,
+      demo: "https://plasticrhinogame.netlify.app/",
+      code: "https://github.com/jackrobert0220/flappy-rhino",
     },
     {
       id: 3,
@@ -34,15 +34,15 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      src: flappybird,
-      demo: "https://plasticrhinogame.netlify.app/",
-      code: "https://github.com/jackrobert0220/flappy-rhino",
-    },
-    {
-      id: 6,
       src: tamagotchi,
       demo: "https://jackrobert0220.github.io/Tamagotchi-Project-One/",
       code: "https://github.com/jackrobert0220/Tamagotchi-Project-One",
+    },
+    {
+      id: 6,
+      src: djangoGuitars,
+      demo: "https://djangoguitars.herokuapp.com/",
+      code: "https://github.com/jackrobert0220/Django-Guitars",
     },
   ];
 
