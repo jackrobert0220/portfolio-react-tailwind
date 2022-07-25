@@ -72,8 +72,17 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <div className="rounded-2xl mx-auto w-2/3 md:w-[10] mt-4 sm:mt-0 bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black">
+          <div className="">
+            <img
+              src={HeroImage}
+              alt="Jack Glazer playing the guitar at a live event"
+              className="rounded-2xl"
+            />
+          </div>
+        </div>
         <div className="flex flex-col justify-center md:h-2/3">
-          <h2 className="text-4xl  pt-10 sm:text-7xl sm:mt-[3em] md:mt-0 font-bold text-white">
+          <h2 className="text-4xl  pt-10 sm:text-7xl md:mt-0 font-bold text-white">
             Hi, I'm <span className="text-[#47B0AC]">Jack</span>👋
           </h2>
           <h3 className="text-2xl sm:text-4xl font-bold text-white">
@@ -119,15 +128,6 @@ const Home = () => {
       </ul>
 
 
-        </div>
-        <div className="rounded-2xl mx-auto w-2/3 md:w-[10] mt-4 sm:mt-0 bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black">
-          <div className="">
-            <img
-              src={HeroImage}
-              alt="Jack Glazer playing the guitar at a live event"
-              className="rounded-2xl"
-            />
-          </div>
         </div>
       </div>
     </div>
