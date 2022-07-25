@@ -88,8 +88,7 @@ const Home = () => {
             I'm a Front-End Developer.
           </h3>
           <p className="text-white text-xl py-4">
-            Rock Musician <span className="text-[#47B0AC]">|</span> based in Los Angeles, CA <span className="text-[#47B0AC]">|</span> former Crematory Operator
-            <span className="text-[#47B0AC]">|</span> Dog Father
+            Rock Musician <span className="text-[#47B0AC]">|</span> based in Los Angeles, CA <span className="text-[#47B0AC]">|</span> former Crematory Operator <span className="text-[#47B0AC]">|</span> Dog Father
           </p>
           {/* <p className="text-gray-500 py-4 max-w-md">
             Currently, I'm focused on building responsive front-end web
