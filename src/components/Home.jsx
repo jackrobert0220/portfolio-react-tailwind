@@ -15,7 +15,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] mt-[10rem] md:my-auto bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
+        <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] mt-[5rem] md:my-auto bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
           <div className="">
             <img
               src={HeroImage}
@@ -24,19 +24,30 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center md:h-2/3 ml-5">
+        <div className="flex flex-col justify-center md:h-2/3 mx-5">
           <h2 className="text-4xl  pt-10 sm:text-5xl md:mt-0 font-bold text-white">
             Hi, I'm <span className="text-[#47B0AC]">Jack</span>👋
           </h2>
           <h3 className="text-2xl sm:text-3xl font-bold text-white">
             I'm a Front-End Developer.
           </h3>
-          <p className="text-white text-xl py-4">
-            Rock Musician <span className="text-[#47B0AC]">|</span> based in Los
-            Angeles, CA <span className="text-[#47B0AC]">|</span> former
-            Crematory Operator <span className="text-[#47B0AC]">|</span> Dog
-            Father
-          </p>
+          <ul className="text-white text-xl py-4">
+          <li>
+          <span className="text-[#47B0AC]">|</span> Rock Musician <span className="text-[#47B0AC]">|</span> 
+            </li>
+            <li>
+            <span className="text-[#47B0AC]">|</span> based in Los
+            Angeles, CA <span className="text-[#47B0AC]">|</span>
+            </li> 
+            <li>
+            <span className="text-[#47B0AC]">|</span> former
+            Crematory Operator <span className="text-[#47B0AC]">|</span>
+            </li> 
+            <li>
+            <span className="text-[#47B0AC]">|</span> Dog
+            Father <span className="text-[#47B0AC]">|</span> 
+            </li>
+          </ul>
           {/* <p className="text-gray-500 py-4 max-w-md">
             Currently, I'm focused on building responsive front-end web
             applications while learning back-end technologies.
