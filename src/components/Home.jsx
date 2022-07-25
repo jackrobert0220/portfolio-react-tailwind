@@ -2,69 +2,13 @@ import React from "react";
 import HeroImage from "../assets/guitar.jpg";
 import { ImArrowRight } from "react-icons/im";
 import { Link } from "react-scroll";
-import { FaGithub, FaLinkedin, FaSpotify, FaTwitter } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
+
+//Commented out in case I want to use green social tabs later-----
+// import { FaGithub, FaLinkedin, FaSpotify, FaTwitter } from "react-icons/fa";
+// import { BsInstagram } from "react-icons/bs";
+// import { HiOutlineMail } from "react-icons/hi";
 
 const Home = () => {
-  const links = [
-    {
-      id: 1,
-      child: (
-        <>
-          <BsInstagram size={30} />
-        </>
-      ),
-      href: "https://instagram.com/jackglazzzer/",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/jackrobert0220/",
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://www.linkedin.com/in/jack-glazer/",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          <FaTwitter size={30} />
-        </>
-      ),
-      href: "https://www.twitter.com/jackglazzzer/",
-    },
-    {
-      id: 5,
-      child: (
-        <>
-          <FaSpotify size={30} />
-        </>
-      ),
-      href: "https://open.spotify.com/artist/7FXugc5Lme1dHnjxD88do4?si=n9eH1rx9QSaSJsyhacFLmQ",
-    },
-    {
-      id: 6,
-      child: (
-        <>
-          <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:jackrobert0220@gmail.com",
-      style: "rounded-br-md",
-    },
-  ];
-
   return (
     <div
       name="home"
@@ -88,7 +32,10 @@ const Home = () => {
             I'm a Front-End Developer.
           </h3>
           <p className="text-white text-xl py-4">
-            Rock Musician <span className="text-[#47B0AC]">|</span> based in Los Angeles, CA <span className="text-[#47B0AC]">|</span> former Crematory Operator <span className="text-[#47B0AC]">|</span> Dog Father
+            Rock Musician <span className="text-[#47B0AC]">|</span> based in Los
+            Angeles, CA <span className="text-[#47B0AC]">|</span> former
+            Crematory Operator <span className="text-[#47B0AC]">|</span> Dog
+            Father
           </p>
           {/* <p className="text-gray-500 py-4 max-w-md">
             Currently, I'm focused on building responsive front-end web
@@ -108,19 +55,6 @@ const Home = () => {
               </span>
             </Link>
           </div>
-
-          <ul className=" flex lg:hidden">
-            {links.map(({ id, child, href }) => (
-              <li
-                key={id}
-                className="p-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
-              >
-                <a href={href} target="_blank" rel="noreferrer">
-                  {child}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>
