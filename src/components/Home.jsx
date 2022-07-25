@@ -7,7 +7,6 @@ import { BsInstagram } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Home = () => {
-
   const links = [
     {
       id: 1,
@@ -72,8 +71,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-      
-        <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] mt-[10rem] md:my-auto bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
+        <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] mt-[14rem] md:my-auto bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
           <div className="">
             <img
               src={HeroImage}
@@ -89,12 +87,10 @@ const Home = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-white">
             I'm a Front-End Developer.
           </h3>
-          <ul className="text-white text-xl py-4">
-            <li>🎸 Rock Musician</li>
-            <li>☀️ based in Los Angeles, CA</li>
-            <li>🔥 former Crematory Operator</li>
-            <li>🐶 Dog Father</li>
-          </ul>
+          <p className="text-white text-xl py-4">
+            Rock Musician <span className="text-[#47B0AC]">|</span> based in Los Angeles, CA <span className="text-[#47B0AC]">|</span> former Crematory Operator
+            <span className="text-[#47B0AC]">|</span> Dog Father
+          </p>
           {/* <p className="text-gray-500 py-4 max-w-md">
             Currently, I'm focused on building responsive front-end web
             applications while learning back-end technologies.
@@ -115,20 +111,17 @@ const Home = () => {
           </div>
 
           <ul className=" flex lg:hidden">
-        {links.map(({ id, child, href }) => (
-          <li
-            key={id}
-            className="p-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
-          >
-          <a href={href} target="_blank"
-              rel="noreferrer">
-            {child}
-            </a>
-          </li>
-        ))}
-      </ul>
-
-
+            {links.map(({ id, child, href }) => (
+              <li
+                key={id}
+                className="p-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
+              >
+                <a href={href} target="_blank" rel="noreferrer">
+                  {child}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
