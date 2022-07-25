@@ -71,7 +71,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] mt-[14rem] md:my-auto bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
+        <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] mt-[10rem] md:my-auto bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
           <div className="">
             <img
               src={HeroImage}
