@@ -8,13 +8,13 @@ const Music = () => {
       name="my music"
       className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <div className="flex flex-col justify-center md:h-2/3">
      <div className="pb-8">
           <p className="text-4xl text-white font-bold inline border-b-4 border-[#47B0AC]">
             My Music
           </p>
         </div>
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center md:h-2/3">
           <h2 className="text-xl sm:text-4xl font-bold text-white">
             Check out my band:{" "}
           </h2>
