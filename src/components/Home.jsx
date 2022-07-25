@@ -88,9 +88,9 @@ const Home = () => {
       </ul>
       </div>
 
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pb-[10rem] lg:pb-0">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pb-[10rem] pt-[1rem] lg:pb-0">
         <div className="rounded-2xl mx-auto sm:mx-6 w-2/3 md:w-[10] bg-gradient-to-l p-[6px] from-[#47B0AC]  to-black max-w-[330px]">
-          <div className="">
+          <div>
             <img
               src={HeroImage}
               alt="Jack Glazer playing the guitar at a live event"
