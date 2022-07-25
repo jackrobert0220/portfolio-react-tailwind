@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
-import { FaBars, FaGithub, FaLinkedin, FaSpotify, FaTimes, FaTwitter } from "react-icons/fa";
+import { FaBars, FaGithub, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
 
