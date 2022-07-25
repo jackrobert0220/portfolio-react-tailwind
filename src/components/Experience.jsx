@@ -7,6 +7,11 @@ import mongo from "../assets/skills/mongo.png";
 import node from "../assets/skills/node.png";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
+import express from "../assets/skills/express.png";
+import python from "../assets/skills/python.png";
+import django from "../assets/skills/django.png";
+import socket from "../assets/skills/socket.png";
+import bootstrap from "../assets/skills/bootstrap.png";
 
 
 const Experience = () => {
@@ -43,20 +48,50 @@ const Experience = () => {
     },
     {
       id: 6,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-500",
+    },
+    {
+      id: 7,
       src: mongo,
       title: "MongoDB",
       style: "shadow-[#CD7F32]",
     },
     {
-      id: 7,
+      id: 8,
+      src: github,
+      title: "GitHub",
+      style: "shadow-white",
+    },
+    {
+      id: 9,
       src: node,
       title: "NodeJS",
       style: "shadow-green-600",
     },
     {
-      id: 8,
-      src: github,
-      title: "GitHub",
+      id: 10,
+      src: express,
+      title: "ExpressJS",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 11,
+      src: python,
+      title: "Python",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 12,
+      src: django,
+      title: "Django",
+      style: "shadow-green-800",
+    },
+    {
+      id: 13,
+      src: socket,
+      title: "Socket.io",
       style: "shadow-white",
     },
   ];
