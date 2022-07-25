@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
-import { FaBars, FaGithub, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
+import { FaBars, FaGithub, FaLinkedin, FaSpotify, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
 
@@ -44,17 +44,17 @@ const Navbar = () => {
       ),
       href: "https://www.twitter.com/jackglazzzer/",
     },
-    // {
-    //   id: 5,
-    //   child: (
-    //     <>
-    //       <FaSpotify size={30} />
-    //     </>
-    //   ),
-    //   href: "https://open.spotify.com/artist/7FXugc5Lme1dHnjxD88do4?si=n9eH1rx9QSaSJsyhacFLmQ",
-    // },
     {
       id: 5,
+      child: (
+        <>
+          <FaSpotify size={30} />
+        </>
+      ),
+      href: "https://open.spotify.com/artist/7FXugc5Lme1dHnjxD88do4?si=n9eH1rx9QSaSJsyhacFLmQ",
+    },
+    {
+      id: 6,
       child: (
         <>
           <HiOutlineMail size={30} />
@@ -98,11 +98,11 @@ const Navbar = () => {
         <h1 className="text-5xl font-signature ml-2">Jack</h1>
       </div>
 
-      <ul className="flex">
+      <ul className="hidden lg:flex">
             {socials.map(({ id, child, href }) => (
               <li
                 key={id}
-                className="p-2 lg:p-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
+                className="p-2 lg:p-3 cursor-pointer capitalize font-medium text-gray-200 hover:scale-110 hover:text-[#47B0AC] duration-200"
               >
                 <a href={href} target="_blank" rel="noreferrer">
                   {child}
@@ -111,7 +111,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-      <ul className=" hidden lg:flex">
+      <ul className=" hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
@@ -126,7 +126,7 @@ const Navbar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-200 lg:hidden"
+        className="cursor-pointer pr-4 z-10 text-gray-200 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
