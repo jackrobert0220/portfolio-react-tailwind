@@ -64,7 +64,7 @@ const SocialBar = () => {
   ];
 
   return (
-    <div className="flex bg-black flex-col items-center  pt-[5rem] lg:hidden">
+    <div className="flex w-full h-15 bg-black flex-col items-center  pt-[5rem] lg:hidden">
       <ul className="flex">
         {socials.map(({ id, child, href }) => (
           <li
