@@ -18,7 +18,7 @@ const Music = () => {
           <h2 className="text-xl sm:text-4xl font-bold text-white">
             Check out my band:{" "}
           </h2>
-          <h2 className="text-4xl sm:text-7xl font-bold text-white hover:text-[#47B0AC] hover:scale-105 duration-200">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white hover:text-[#47B0AC] hover:scale-105 duration-200 py-4">
             <a
               href="http://www.plasticrhinoband.com/"
               target="_blank"
