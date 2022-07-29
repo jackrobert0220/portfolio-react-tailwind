@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div
-      name="home"
+      
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pb-[8rem] sm:pb-[16rem] md:pb-[14rem] lg:pb-0 pt-[4rem] md:pt-[0rem]">
